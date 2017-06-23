@@ -24,4 +24,10 @@ var routes = Routes{
 		"/{[a-zA-Z0-9]}",
 		MethodNotAllowed,
 	},
+        Route{
+                "Health Check",
+                "GET",
+                "/v1/healthcheck",
+                HealthCheck,
+        },
 }
